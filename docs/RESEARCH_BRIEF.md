@@ -18,4 +18,8 @@ Book integrity metrics, feature definitions, blocked time splits, baseline-vs-mo
 
 Integrity or research tooling may be reusable; alpha sales and live trading claims are unsupported without broad data and fills. If gaps invalidate reconstruction or gains disappear across days, retain the integrity tooling and publish the negative research result.
 
-Planning source: quant-finance/QUANT_HIGH_EFFORT.md, assessed 19 October 2026. Source links and data cautions are in that report.
+## Source link and data caution
+
+[LOBSTER's message and order-book samples](https://data.lobsterdata.com/info/DataSamples.php) support parser and feature checks. A short sample cannot establish an across-day alpha claim. Check terms before using or redistributing any raw data; snapshot-only history cannot reconstruct intervening order-flow events.
+
+Planning assessment: 19 October 2026.
