@@ -1,0 +1,573 @@
+{
+  "project_slug": "book-research",
+  "first_public_result_month": 3,
+  "total_hours": 420,
+  "reserve_hours": 120,
+  "status": "queued",
+  "milestones": [
+    {
+      "id": "QB-M1",
+      "title": "Data rights and event semantics",
+      "description": "Relative to explicit activation: Months 1–2; 50 task hours + 20 reserve; cumulative 70 hours. Tasks QB-001–QB-005. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 1–2",
+      "work_hours": 50,
+      "reserve_hours": 20,
+      "cumulative_hours": 70
+    },
+    {
+      "id": "QB-M2",
+      "title": "Book replay and feature slice",
+      "description": "Relative to explicit activation: Months 1–2; 50 task hours + 20 reserve; cumulative 140 hours. Tasks QB-006–QB-010. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 1–2",
+      "work_hours": 50,
+      "reserve_hours": 20,
+      "cumulative_hours": 140
+    },
+    {
+      "id": "QB-M3",
+      "title": "First public integrity artifact",
+      "description": "Relative to explicit activation: Month 3; 50 task hours + 18 reserve; cumulative 208 hours. Tasks QB-011–QB-015. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Month 3",
+      "work_hours": 50,
+      "reserve_hours": 18,
+      "cumulative_hours": 208
+    },
+    {
+      "id": "QB-M4",
+      "title": "Leakage-controlled modeling",
+      "description": "Relative to explicit activation: Months 5–7; 50 task hours + 22 reserve; cumulative 280 hours. Tasks QB-016–QB-020. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 5–7",
+      "work_hours": 50,
+      "reserve_hours": 22,
+      "cumulative_hours": 280
+    },
+    {
+      "id": "QB-M5",
+      "title": "Robustness and cost boundary",
+      "description": "Relative to explicit activation: Months 6–8; 50 task hours + 20 reserve; cumulative 350 hours. Tasks QB-021–QB-025. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 6–8",
+      "work_hours": 50,
+      "reserve_hours": 20,
+      "cumulative_hours": 350
+    },
+    {
+      "id": "QB-M6",
+      "title": "Final research case and product decision",
+      "description": "Relative to explicit activation: Months 7–12; 50 task hours + 20 reserve; cumulative 420 hours. Tasks QB-026–QB-030. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 7–12",
+      "work_hours": 50,
+      "reserve_hours": 20,
+      "cumulative_hours": 420
+    }
+  ],
+  "issues": [
+    {
+      "id": "QB-001",
+      "title": "Define event-time question",
+      "body": "## Goal\nDefine event-time question for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Specify instrument, labels, horizons and observed vs inferred fields.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/RESEARCH_CONTRACT.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nPrediction target and availability are explicit. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nNone beyond activation. Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M1",
+      "depends_on": [],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QB-002",
+      "title": "Audit sample and stream rights",
+      "body": "## Goal\nAudit sample and stream rights for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Record sample, API, storage and redistribution rules.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/DATA_RIGHTS.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nUnknown rights have generated fallback. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-001 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M1",
+      "depends_on": [
+        "QB-001"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QB-003",
+      "title": "Specify book state contract",
+      "body": "## Goal\nSpecify book state contract for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Define snapshot sync, update sequence and gap policy.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/BOOK_CONTRACT.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nIncomplete state is marked invalid. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-002 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M1",
+      "depends_on": [
+        "QB-002"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QB-004",
+      "title": "Set resource envelope",
+      "body": "## Goal\nSet resource envelope for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Measure sample size, local disk and replay target.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/RESOURCE_BUDGET.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nBounded laptop run is feasible. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-003 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M1",
+      "depends_on": [
+        "QB-003"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QB-005",
+      "title": "Build generated event stream",
+      "body": "## Goal\nBuild generated event stream for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Produce known book transitions and trades.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/synthetic_events.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nSeed reproduces event order and truth. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-004 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M1",
+      "depends_on": [
+        "QB-004"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QB-006",
+      "title": "Parse message format",
+      "body": "## Goal\nParse message format for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Validate timestamps, side, price and quantity.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/parse.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nBad records have typed diagnostics. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-005 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M2",
+      "depends_on": [
+        "QB-005"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QB-007",
+      "title": "Reconstruct depth",
+      "body": "## Goal\nReconstruct depth for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Apply snapshots and deltas with sequence checks.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/book.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nHand-built examples match exact levels. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-006 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M2",
+      "depends_on": [
+        "QB-006"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QB-008",
+      "title": "Detect integrity faults",
+      "body": "## Goal\nDetect integrity faults for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Count gaps, crossed books and stale states.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/integrity.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nEvery fault excludes unsafe labels. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-007 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M2",
+      "depends_on": [
+        "QB-007"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QB-009",
+      "title": "Define baseline features",
+      "body": "## Goal\nDefine baseline features for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Compute spread, imbalance and trade arrival only when observable.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/features.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nFeature timestamps precede labels. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-008 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M2",
+      "depends_on": [
+        "QB-008"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QB-010",
+      "title": "Define horizon labels",
+      "body": "## Goal\nDefine horizon labels for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Compute mid-price changes with neutral and missing states.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/labels.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nOverlaps and unavailable windows are counted. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-009 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M2",
+      "depends_on": [
+        "QB-009"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QB-011",
+      "title": "Build replay diagnostics",
+      "body": "## Goal\nBuild replay diagnostics for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Export state and fault timeline for one sample.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/cli.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nOne command reproduces a report. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-010 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M3",
+      "depends_on": [
+        "QB-010"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QB-012",
+      "title": "Publish first integrity report",
+      "body": "## Goal\nPublish first integrity report for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Release generated/permitted sample and reconstruction tests.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/alpha.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo multi-day alpha claim is made. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-011 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M3",
+      "depends_on": [
+        "QB-011"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QB-013",
+      "title": "Design blocked time splits",
+      "body": "## Goal\nDesign blocked time splits for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Separate days and purge overlapping label windows.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/EVALUATION.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nTrain cannot see held-out day events. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-012 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M3",
+      "depends_on": [
+        "QB-012"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QB-014",
+      "title": "Fit simple baselines",
+      "body": "## Goal\nFit simple baselines for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Compare constant, prior-move and linear predictors.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/baselines.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nMetrics beat trivial baselines only if measured. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-013 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M3",
+      "depends_on": [
+        "QB-013"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QB-015",
+      "title": "Fit bounded tree model",
+      "body": "## Goal\nFit bounded tree model for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Train one declared model with fixed search budget.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/model.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nTrials and parameters are logged. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-014 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M3",
+      "depends_on": [
+        "QB-014"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QB-016",
+      "title": "Run leakage probes",
+      "body": "## Goal\nRun leakage probes for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Shift labels, scramble time and perturb future events.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `tests/test_leakage.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nProbes reveal invalid pipeline behavior. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-015 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M4",
+      "depends_on": [
+        "QB-015"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QB-017",
+      "title": "Measure horizon decay",
+      "body": "## Goal\nMeasure horizon decay for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Report score by prediction horizon with intervals.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/horizons.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nAll prespecified horizons and denominators appear. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-016 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M4",
+      "depends_on": [
+        "QB-016"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QB-018",
+      "title": "Compare across days",
+      "body": "## Goal\nCompare across days for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Evaluate on separated sessions or state the data limit.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/day-shift.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nOne-hour sample is not generalized. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-017 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M4",
+      "depends_on": [
+        "QB-017"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QB-019",
+      "title": "Check feature stability",
+      "body": "## Goal\nCheck feature stability for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Compare performance under depth and volatility variation.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/stability.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nUnavailable regimes are listed. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-018 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M4",
+      "depends_on": [
+        "QB-018"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QB-020",
+      "title": "Inspect model failures",
+      "body": "## Goal\nInspect model failures for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Group errors by spread, gap and activity conditions.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/failures.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nExamples include replayable event IDs. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-019 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M4",
+      "depends_on": [
+        "QB-019"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QB-021",
+      "title": "Bound execution inference",
+      "body": "## Goal\nBound execution inference for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Apply stated spread/fee assumptions without claiming fills.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/cost-boundary.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nMid-price prediction remains separate from P&L. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-020 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M5",
+      "depends_on": [
+        "QB-020"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QB-022",
+      "title": "Test quote integrity",
+      "body": "## Goal\nTest quote integrity for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Check timestamps and synchronization at data seams.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `tests/test_alignment.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nMisaligned quotes are rejected. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-021 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M5",
+      "depends_on": [
+        "QB-021"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QB-023",
+      "title": "Benchmark local replay",
+      "body": "## Goal\nBenchmark local replay for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Measure throughput, RAM and data footprint.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `benchmarks/local.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nCommands and hardware are recorded. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-022 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M5",
+      "depends_on": [
+        "QB-022"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QB-024",
+      "title": "Package research pipeline",
+      "body": "## Goal\nPackage research pipeline for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Provide reproducible data generation and report command.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `README.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nClean setup recreates public result. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-023 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M5",
+      "depends_on": [
+        "QB-023"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QB-025",
+      "title": "Review data limitations",
+      "body": "## Goal\nReview data limitations for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Document order-level vs aggregated depth semantics.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/LIMITATIONS.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nQueue-position claims match data granularity. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-024 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M5",
+      "depends_on": [
+        "QB-024"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QB-026",
+      "title": "Document negative results",
+      "body": "## Goal\nDocument negative results for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Report failed features and tuning attempts.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/trial-log.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nAll tried models appear. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-025 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M6",
+      "depends_on": [
+        "QB-025"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QB-027",
+      "title": "Write portfolio case study",
+      "body": "## Goal\nWrite portfolio case study for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Explain integrity, modeling, leakage and caveats.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/case-study.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nEvery claim maps to measured run. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-026 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M6",
+      "depends_on": [
+        "QB-026"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QB-028",
+      "title": "Identify tooling user",
+      "body": "## Goal\nIdentify tooling user for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Test one analyst workflow using permissible data.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/workflow.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nDemand remains labeled hypothesis. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-027 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M6",
+      "depends_on": [
+        "QB-027"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QB-029",
+      "title": "Plan broader-data gate",
+      "body": "## Goal\nPlan broader-data gate for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. List minimum sessions and rights for stronger study.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/DATA_GATE.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo purchase or entitlement is assumed. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-028 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M6",
+      "depends_on": [
+        "QB-028"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QB-030",
+      "title": "Decide next step",
+      "body": "## Goal\nDecide next step for Book Research Lab, within 10 hours including checks and documentation.\n\n## Steps\n1. Choose research extension, integrity product or park.\n2. Check the product boundary: Reconstruct sequenced depth where available, test short-horizon prediction against simple baselines, report gaps and costs. Predicting mid-price moves does not establish executable profit.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/PRODUCT_DECISION.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nDecision follows failures and data rights. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQB-029 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 10,
+      "milestone": "QB-M6",
+      "depends_on": [
+        "QB-029"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    }
+  ]
+}
